@@ -1,0 +1,64 @@
+---
+title: "Dusseldorf_plot_cases"
+output: html_document
+date: "2024-02-01"
+---
+
+```{r}
+library ("ape")
+library("ggplot2")
+library("R.utils")
+library("ggplot2")
+library("lubridate")
+library("dplyr")
+library("ggExtra")
+library("ggpubr")
+library("ggrepel")
+library("geomtextpath")
+library("tidyverse")
+library("viridis")
+library("RColorBrewer")
+library("plotrix")
+library("ggbreak")
+```
+
+```{r}
+df <- read.csv(file = "/Users/oeversti/SARS-CoV-2/GreenPaper/Dusseldorf_Walker_hospital-outbreak/Walker_Supplements/ciab588_suppl_supplementary_table_s1.csv", sep = ";", header = TRUE)
+```
+
+
+```{r}
+df <- df %>%  
+  mutate(X..sequenced = as.numeric(as.character(X..sequenced)))
+```
+
+
+```{r}
+
+b <- ggplot(df, aes(x = Week, y=Sequenced_cases, fill="Sequenced_cases")) + geom_col(width = 0.75) + 
+  theme_bw() + 
+    theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank()) +
+
+  scale_fill_manual(breaks = c("Sequenced_cases"), values = c("deepskyblue3")) +
+  
+  theme(legend.position = "none") +
+#  theme(legend.title=element_blank()) +
+
+  geom_line(aes(x=Week, y=Percent_sequenced),stat="identity",color="#CC0033",size=1.5) + 
+  labs(title= expression(paste("Sequenced SARS-CoV-2 surveillance cases in Düsseldorf")), 
+       x="Week",y="Number of sequenced cases per week\n")+ 
+  scale_y_continuous(sec.axis=sec_axis(~.*1,name="\n% of sequenced cases out of all cases\n")) +
+  theme(axis.title.y.right = element_text(angle = 90)) +
+  theme(axis.text = element_text(size = 12)) +
+  theme(axis.title = element_text(size = 14))
+b
+
+ggsave("/Users/oeversti/SARS-CoV-2/GreenPaper/Dusseldorf_Walker_hospital-outbreak/Walker_Supplements/Dusseldorf_cases_vs_sequenced.png", plot=b, width = 9, height = 7)
+
+ggsave("/Users/oeversti/SARS-CoV-2/GreenPaper/Dusseldorf_Walker_hospital-outbreak/Walker_Supplements/Dusseldorf_cases_vs_sequenced.pdf", plot=b, width = 9, height = 7)
+```
+
+
+
+
+

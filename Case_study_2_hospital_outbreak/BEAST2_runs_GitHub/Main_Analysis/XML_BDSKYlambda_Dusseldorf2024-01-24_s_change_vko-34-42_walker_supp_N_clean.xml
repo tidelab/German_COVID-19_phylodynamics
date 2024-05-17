@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='MultiTypeBirthDeathUncoloured' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" version="2.0">
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<data id="clustersurveillance" name="alignment">
+    <sequence id="seq_Z6|B.1.221|2020-08-17" spec="Sequence" taxon="Z6|B.1.221|2020-08-17" totalcount="4" value="N"/>
+    <sequence id="seq_Z19|B.1.221|2020-08-18" spec="Sequence" taxon="Z19|B.1.221|2020-08-18" totalcount="4" value="N"/>
+    <sequence id="seq_Z22|B.1.221|2020-08-21" spec="Sequence" taxon="Z22|B.1.221|2020-08-21" totalcount="4" value="N"/>
+    <sequence id="seq_Z23|B.1.221|2020-08-21" spec="Sequence" taxon="Z23|B.1.221|2020-08-21" totalcount="4" value="N"/>
+    <sequence id="seq_Z25|B.1.221|2020-08-20" spec="Sequence" taxon="Z25|B.1.221|2020-08-20" totalcount="4" value="N"/>
+    <sequence id="seq_Z42|B.1.221|2020-08-28" spec="Sequence" taxon="Z42|B.1.221|2020-08-28" totalcount="4" value="N"/>
+    <sequence id="seq_Z75|B.1.221|2020-09-11" spec="Sequence" taxon="Z75|B.1.221|2020-09-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z76|B.1.221|2020-09-11" spec="Sequence" taxon="Z76|B.1.221|2020-09-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z77|B.1.221|2020-09-29" spec="Sequence" taxon="Z77|B.1.221|2020-09-29" totalcount="4" value="N"/>
+    <sequence id="seq_Z82|B.1.221|2020-09-19" spec="Sequence" taxon="Z82|B.1.221|2020-09-19" totalcount="4" value="N"/>
+    <sequence id="seq_Z85|B.1.221|2020-09-28" spec="Sequence" taxon="Z85|B.1.221|2020-09-28" totalcount="4" value="N"/>
+    <sequence id="seq_Z86|B.1.221|2020-09-16" spec="Sequence" taxon="Z86|B.1.221|2020-09-16" totalcount="4" value="N"/>
+    <sequence id="seq_Z87|B.1.221|2020-09-20" spec="Sequence" taxon="Z87|B.1.221|2020-09-20" totalcount="4" value="N"/>
+    <sequence id="seq_Z94|B.1.221|2020-09-17" spec="Sequence" taxon="Z94|B.1.221|2020-09-17" totalcount="4" value="N"/>
+    <sequence id="seq_Z95|B.1.221|2020-09-17" spec="Sequence" taxon="Z95|B.1.221|2020-09-17" totalcount="4" value="N"/>
+    <sequence id="seq_Z97|B.1.221|2020-09-17" spec="Sequence" taxon="Z97|B.1.221|2020-09-17" totalcount="4" value="N"/>
+    <sequence id="seq_Z164|B.1.221|2020-10-01" spec="Sequence" taxon="Z164|B.1.221|2020-10-01" totalcount="4" value="N"/>
+    <sequence id="seq_Z270|B.1.221|2020-10-12" spec="Sequence" taxon="Z270|B.1.221|2020-10-12" totalcount="4" value="N"/>
+    <sequence id="seq_Z492|B.1.221|2020-10-25" spec="Sequence" taxon="Z492|B.1.221|2020-10-25" totalcount="4" value="N"/>
+    <sequence id="seq_Z536|B.1.221|2020-11-01" spec="Sequence" taxon="Z536|B.1.221|2020-11-01" totalcount="4" value="N"/>
+    <sequence id="seq_Z541|B.1.221|2020-11-01" spec="Sequence" taxon="Z541|B.1.221|2020-11-01" totalcount="4" value="N"/>
+    <sequence id="seq_Z545|B.1.221|2020-11-01" spec="Sequence" taxon="Z545|B.1.221|2020-11-01" totalcount="4" value="N"/>
+    <sequence id="seq_Z550|B.1.221|2020-11-01" spec="Sequence" taxon="Z550|B.1.221|2020-11-01" totalcount="4" value="N"/>
+    <sequence id="seq_Z551|B.1.221|2020-11-01" spec="Sequence" taxon="Z551|B.1.221|2020-11-01" totalcount="4" value="N"/>
+    <sequence id="seq_Z655|B.1.221|2020-11-26" spec="Sequence" taxon="Z655|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z656|B.1.221|2020-11-26" spec="Sequence" taxon="Z656|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z657|B.1.221|2020-11-26" spec="Sequence" taxon="Z657|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z658|B.1.221|2020-11-26" spec="Sequence" taxon="Z658|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z659|B.1.221|2020-11-26" spec="Sequence" taxon="Z659|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z661|B.1.221|2020-11-26" spec="Sequence" taxon="Z661|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z662|B.1.221|2020-11-26" spec="Sequence" taxon="Z662|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z663|B.1.221|2020-11-26" spec="Sequence" taxon="Z663|B.1.221|2020-11-26" totalcount="4" value="N"/>
+    <sequence id="seq_Z677|B.1.221.2|2020-12-03" spec="Sequence" taxon="Z677|B.1.221.2|2020-12-03" totalcount="4" value="N"/>
+    <sequence id="seq_Z696|B.1.221.2|2020-12-03" spec="Sequence" taxon="Z696|B.1.221.2|2020-12-03" totalcount="4" value="N"/>
+    <sequence id="seq_Z700|B.1.221|2020-12-03" spec="Sequence" taxon="Z700|B.1.221|2020-12-03" totalcount="4" value="N"/>
+    <sequence id="seq_Z726|B.1.221|2020-12-11" spec="Sequence" taxon="Z726|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z733|B.1.221|2020-12-11" spec="Sequence" taxon="Z733|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z737|B.1.221|2020-12-11" spec="Sequence" taxon="Z737|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z739|B.1.221|2020-12-11" spec="Sequence" taxon="Z739|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z740|B.1.221|2020-12-11" spec="Sequence" taxon="Z740|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z742|B.1.221|2020-12-11" spec="Sequence" taxon="Z742|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z743|B.1.221.2|2020-12-11" spec="Sequence" taxon="Z743|B.1.221.2|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z744|B.1.221|2020-12-11" spec="Sequence" taxon="Z744|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z745|B.1.221|2020-12-11" spec="Sequence" taxon="Z745|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z746|B.1.221|2020-12-11" spec="Sequence" taxon="Z746|B.1.221|2020-12-11" totalcount="4" value="N"/>
+    <sequence id="seq_Z772|B.1.221|2020-12-16" spec="Sequence" taxon="Z772|B.1.221|2020-12-16" totalcount="4" value="N"/>
+    <sequence id="seq_Z778|B.1.221|2020-12-16" spec="Sequence" taxon="Z778|B.1.221|2020-12-16" totalcount="4" value="N"/>
+    <sequence id="seq_Z782|B.1.221|2020-12-16" spec="Sequence" taxon="Z782|B.1.221|2020-12-16" totalcount="4" value="N"/>
+    <sequence id="seq_Z794|B.1.221|2020-12-16" spec="Sequence" taxon="Z794|B.1.221|2020-12-16" totalcount="4" value="N"/>
+    <sequence id="seq_Z795|B.1.221|2020-12-16" spec="Sequence" taxon="Z795|B.1.221|2020-12-16" totalcount="4" value="N"/>
+</data>
+
+<data id="clusterward-D" name="alignment">
+    <sequence id="seq_D-1002|B.1.221|2020-12-23" spec="Sequence" taxon="D-1002|B.1.221|2020-12-23" totalcount="4" value="N"/>
+    <sequence id="seq_D-1003|B.1.221|2020-12-23" spec="Sequence" taxon="D-1003|B.1.221|2020-12-23" totalcount="4" value="N"/>
+    <sequence id="seq_D-1005|B.1.221|2020-12-23" spec="Sequence" taxon="D-1005|B.1.221|2020-12-23" totalcount="4" value="N"/>
+    <sequence id="seq_D-1007|B.1.221|2020-12-23" spec="Sequence" taxon="D-1007|B.1.221|2020-12-23" totalcount="4" value="N"/>
+    <sequence id="seq_D-973|B.1.221|2020-12-14" spec="Sequence" taxon="D-973|B.1.221|2020-12-14" totalcount="4" value="N"/>
+    <sequence id="seq_D-974|B.1.221|2020-12-14" spec="Sequence" taxon="D-974|B.1.221|2020-12-14" totalcount="4" value="N"/>
+    <sequence id="seq_D-977|B.1.221|2020-12-15" spec="Sequence" taxon="D-977|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-978|B.1.221|2020-12-15" spec="Sequence" taxon="D-978|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-979|B.1.221|2020-12-15" spec="Sequence" taxon="D-979|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-980|B.1.221|2020-12-15" spec="Sequence" taxon="D-980|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-982|B.1.221|2020-12-15" spec="Sequence" taxon="D-982|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-983|B.1.221|2020-12-15" spec="Sequence" taxon="D-983|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-984|B.1.221|2020-12-15" spec="Sequence" taxon="D-984|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-985|B.1.221|2020-12-15" spec="Sequence" taxon="D-985|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-986|B.1.221|2020-12-14" spec="Sequence" taxon="D-986|B.1.221|2020-12-14" totalcount="4" value="N"/>
+    <sequence id="seq_D-987|B.1.221|2020-12-14" spec="Sequence" taxon="D-987|B.1.221|2020-12-14" totalcount="4" value="N"/>
+    <sequence id="seq_D-988|B.1.221|2020-12-15" spec="Sequence" taxon="D-988|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-990|B.1.221|2020-12-15" spec="Sequence" taxon="D-990|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-991|B.1.221|2020-12-15" spec="Sequence" taxon="D-991|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-992|B.1.221|2020-12-15" spec="Sequence" taxon="D-992|B.1.221|2020-12-15" totalcount="4" value="N"/>
+    <sequence id="seq_D-993|B.1.221|2020-12-16" spec="Sequence" taxon="D-993|B.1.221|2020-12-16" totalcount="4" value="N"/>
+    <sequence id="seq_D-994|B.1.221|2020-12-16" spec="Sequence" taxon="D-994|B.1.221|2020-12-16" totalcount="4" value="N"/>
+    <sequence id="seq_D-995|B.1.221|2020-12-16" spec="Sequence" taxon="D-995|B.1.221|2020-12-16" totalcount="4" value="N"/>
+</data>
+
+
+<parameter id="birthChangeAmongDemesTimessurveillance" name="birthRateChangeAmongDemesTimes">0.0 0.121</parameter> 
+
+<parameter id="samplingRateChangeTimessurveillance" name="samplingRateChangeTimes">0.0 0.178 0.333</parameter> 
+<parameter id="samplingRateChangeTimesward-D" name="samplingRateChangeTimes">0.0 0.025</parameter> 
+
+
+<reverseTimeArrays id="reverseTimeArrays" spec="parameter.BooleanParameter" dimension="4">true true true false</reverseTimeArrays>
+
+<siteModel id="SiteModel.s" spec="SiteModel">
+    <parameter id="mutationRate.s" estimate="false" name="mutationRate">1.0</parameter>
+    <parameter id="gammaShape.s" estimate="true" name="shape">1.0</parameter>
+    <parameter id="proportionInvariant.s" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+    <substModel id="hky.s" spec="HKY" kappa="@kappa.s">
+        <frequencies id="estimatedFreqs.s" spec="Frequencies" frequencies="@freqParameter.s"/>
+    </substModel>
+</siteModel>
+
+<taxa id="TaxonSetsurveillance" 	    	spec="TaxonSet">	    		<alignment idref="clustersurveillance"/>		    </taxa>
+<taxa id="TaxonSetward-D" 	    	spec="TaxonSet">	    		<alignment idref="clusterward-D"/>		    </taxa>
+
+<run id="mcmc" spec="MCMC" chainLength="10000000" numInitializationAttempts="50000">
+
+<init id="Treesurveillance" spec="beast.evolution.tree.RandomTree" taxa="@clustersurveillance">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitsurveillance" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetsurveillance" dateFormat="yyyy-MM-dd" traitname="date" value="Z6|B.1.221|2020-08-17=2020-08-17,Z19|B.1.221|2020-08-18=2020-08-18,Z22|B.1.221|2020-08-21=2020-08-21,Z23|B.1.221|2020-08-21=2020-08-21,Z25|B.1.221|2020-08-20=2020-08-20,Z42|B.1.221|2020-08-28=2020-08-28,Z75|B.1.221|2020-09-11=2020-09-11,Z76|B.1.221|2020-09-11=2020-09-11,Z77|B.1.221|2020-09-29=2020-09-29,Z82|B.1.221|2020-09-19=2020-09-19,Z85|B.1.221|2020-09-28=2020-09-28,Z86|B.1.221|2020-09-16=2020-09-16,Z87|B.1.221|2020-09-20=2020-09-20,Z94|B.1.221|2020-09-17=2020-09-17,Z95|B.1.221|2020-09-17=2020-09-17,Z97|B.1.221|2020-09-17=2020-09-17,Z164|B.1.221|2020-10-01=2020-10-01,Z270|B.1.221|2020-10-12=2020-10-12,Z492|B.1.221|2020-10-25=2020-10-25,Z536|B.1.221|2020-11-01=2020-11-01,Z541|B.1.221|2020-11-01=2020-11-01,Z545|B.1.221|2020-11-01=2020-11-01,Z550|B.1.221|2020-11-01=2020-11-01,Z551|B.1.221|2020-11-01=2020-11-01,Z655|B.1.221|2020-11-26=2020-11-26,Z656|B.1.221|2020-11-26=2020-11-26,Z657|B.1.221|2020-11-26=2020-11-26,Z658|B.1.221|2020-11-26=2020-11-26,Z659|B.1.221|2020-11-26=2020-11-26,Z661|B.1.221|2020-11-26=2020-11-26,Z662|B.1.221|2020-11-26=2020-11-26,Z663|B.1.221|2020-11-26=2020-11-26,Z677|B.1.221.2|2020-12-03=2020-12-03,Z696|B.1.221.2|2020-12-03=2020-12-03,Z700|B.1.221|2020-12-03=2020-12-03,Z726|B.1.221|2020-12-11=2020-12-11,Z733|B.1.221|2020-12-11=2020-12-11,Z737|B.1.221|2020-12-11=2020-12-11,Z739|B.1.221|2020-12-11=2020-12-11,Z740|B.1.221|2020-12-11=2020-12-11,Z742|B.1.221|2020-12-11=2020-12-11,Z743|B.1.221.2|2020-12-11=2020-12-11,Z744|B.1.221|2020-12-11=2020-12-11,Z745|B.1.221|2020-12-11=2020-12-11,Z746|B.1.221|2020-12-11=2020-12-11,Z772|B.1.221|2020-12-16=2020-12-16,Z778|B.1.221|2020-12-16=2020-12-16,Z782|B.1.221|2020-12-16=2020-12-16,Z794|B.1.221|2020-12-16=2020-12-16,Z795|B.1.221|2020-12-16=2020-12-16">		</trait>			<taxonset idref="TaxonSetsurveillance"/>		</init>
+
+<init id="Treeward-D" spec="beast.evolution.tree.RandomTree" taxa="@clusterward-D">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitward-D" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetward-D" dateFormat="yyyy-MM-dd" traitname="date" value="D-1002|B.1.221|2020-12-23=2020-12-23,D-1003|B.1.221|2020-12-23=2020-12-23,D-1005|B.1.221|2020-12-23=2020-12-23,D-1007|B.1.221|2020-12-23=2020-12-23,D-973|B.1.221|2020-12-14=2020-12-14,D-974|B.1.221|2020-12-14=2020-12-14,D-977|B.1.221|2020-12-15=2020-12-15,D-978|B.1.221|2020-12-15=2020-12-15,D-979|B.1.221|2020-12-15=2020-12-15,D-980|B.1.221|2020-12-15=2020-12-15,D-982|B.1.221|2020-12-15=2020-12-15,D-983|B.1.221|2020-12-15=2020-12-15,D-984|B.1.221|2020-12-15=2020-12-15,D-985|B.1.221|2020-12-15=2020-12-15,D-986|B.1.221|2020-12-14=2020-12-14,D-987|B.1.221|2020-12-14=2020-12-14,D-988|B.1.221|2020-12-15=2020-12-15,D-990|B.1.221|2020-12-15=2020-12-15,D-991|B.1.221|2020-12-15=2020-12-15,D-992|B.1.221|2020-12-15=2020-12-15,D-993|B.1.221|2020-12-16=2020-12-16,D-994|B.1.221|2020-12-16=2020-12-16,D-995|B.1.221|2020-12-16=2020-12-16">		</trait>			<taxonset idref="TaxonSetward-D"/>		</init>
+
+<state id="state" storeEvery="5000">
+    <plate var='n' range='surveillance,ward-D'>
+		<stateNode idref="Tree$(n)"/>   
+    </plate>
+    
+    <parameter id="becomeUninfectiousRate.t" dimension="1" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">36.5</parameter>
+
+    <parameter id="baseReproductiveNumber.t" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">1.5 1.5</parameter>
+
+    <parameter id="lambda_ratio_ward-D" spec="parameter.RealParameter" name="stateNode">1</parameter>
+
+    <parameter id="lambda_ratio_surveillance" spec="parameter.RealParameter" name="stateNode">1</parameter>
+
+    <parameter id="samplingProportionward-D.t" dimension="2" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0 0.09</parameter>
+
+    <parameter id="samplingProportionsurveillance.t" dimension="3" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0 0.09 0.09</parameter>
+
+
+    <parameter id="clockRate.c" spec="parameter.RealParameter" name="stateNode">0.0008</parameter>
+    <parameter id="kappa.s" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+    <parameter id="freqParameter.s" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    <stateNode idref="gammaShape.s"/>
+</state>
+
+<distribution id="posterior" spec="util.CompoundDistribution">
+    <distribution id="prior" spec="util.CompoundDistribution">
+     	<distribution id="treePriors" spec="util.CompoundDistribution">
+
+			<plate var='n' range='ward-D'>
+                <distribution id="BDSKY_Serial.$(n)" spec="beast.evolution.speciation.BirthDeathSkylineModel"
+            	becomeUninfectiousRate="@becomeUninfectiousRate.t" samplingRateChangeTimes="@samplingRateChangeTimes$(n)" baseReproductiveNumber="@baseReproductiveNumber.t" lambda_ratio="@lambda_ratio_$(n)" samplingProportion="@samplingProportion$(n).t" reverseTimeArrays="@reverseTimeArrays"
+            	tree="@Tree$(n)" conditionOnRoot="true"/>
+            </plate>          
+
+            <plate var='n' range='surveillance'>
+                <distribution id="BDSKY_Serial.$(n)" spec="beast.evolution.speciation.BirthDeathSkylineModel"
+            	becomeUninfectiousRate="@becomeUninfectiousRate.t" birthRateChangeTimes="@birthChangeAmongDemesTimes$(n)" samplingRateChangeTimes="@samplingRateChangeTimes$(n)" baseReproductiveNumber="@baseReproductiveNumber.t" lambda_ratio="@lambda_ratio_$(n)" samplingProportion="@samplingProportion$(n).t" reverseTimeArrays="@reverseTimeArrays"
+            	tree="@Tree$(n)" conditionOnRoot="true"/>
+            </plate>
+
+        </distribution>
+
+
+        <prior id="FrequenciesPrior.s" name="distribution" x="@freqParameter.s">
+             <Uniform id="Uniform.324" name="distr"/>
+        </prior>
+
+        <prior id="KappaPrior.s" name="distribution" x="@kappa.s">
+            <LogNormal id="LogNormalDistributionModel.136" name="distr">
+                <parameter id="RealParameter.257" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                <parameter id="RealParameter.458" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+            </LogNormal>
+        </prior>
+
+
+				<prior id="R0Prior" name="distribution" x="@baseReproductiveNumber.t">
+					<LogNormal name="distr" M="0." S="1.25"/>
+				</prior>
+
+
+				<plate var='n' range="ward-D,surveillance">
+				<prior id="lambda_ratioPrior.$(n).t" name="distribution" x="@lambda_ratio_$(n)">
+						 <LogNormal id="LogNormal.lambda_ratioPrior.$(n)" name="distr" M="0" S="1"/>
+				</prior>
+			</plate>
+
+
+        <prior id="GammaShapePrior.s" name="distribution" x="@gammaShape.s">
+            <Exponential id="Exponential.285" name="distr" mean="1.0"/>
+        </prior>
+
+        <distribution id="samplingProportionPriorward-D.t0" spec="multitypetree.distributions.ExcludablePrior" x="@samplingProportionward-D.t">
+            <xInclude id="samplingProportionXIncludeward-D.t0" spec="parameter.BooleanParameter" dimension="2">false true</xInclude>
+            <Uniform id="Uniform.680" lower="0" name="distr" upper="0.8"/> 
+        </distribution>	
+
+
+        <distribution id="samplingProportionPriorsurveillance.t0" spec="multitypetree.distributions.ExcludablePrior" x="@samplingProportionsurveillance.t">
+            <xInclude id="samplingProportionXIncludesurveillance.t0" spec="parameter.BooleanParameter" dimension="3">false true false</xInclude>
+
+            <Uniform id="Uniform.681" lower="0" name="distr" upper="0.203"/>
+        </distribution>	
+
+
+        <distribution id="samplingProportionPriorsurveillance.t1" spec="multitypetree.distributions.ExcludablePrior" x="@samplingProportionsurveillance.t">
+            <xInclude id="samplingProportionXIncludesurveillance.t1" spec="parameter.BooleanParameter" dimension="3">false false true</xInclude>
+            <Beta name="distr">
+					<parameter id="RealParameter.7" spec="parameter.RealParameter" name="alpha">3.1</parameter>
+                    <parameter id="RealParameter.8" spec="parameter.RealParameter" name="beta">96.9</parameter>
+                </Beta> 
+        </distribution>	
+
+
+    </distribution>
+
+    <distribution id="likelihood" spec="util.CompoundDistribution">
+	    <plate var='n' range='surveillance,ward-D'>
+			<distribution id="treeLikelihood$(n)" spec="TreeLikelihood" data="@cluster$(n)" tree="@Tree$(n)" siteModel="@SiteModel.s"  useAmbiguities="true">
+				<branchRateModel id="StrictClock$(n)" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c"/>
+	        </distribution>
+		</plate>
+    </distribution>
+</distribution>
+
+<operator id="BDSKY_SerialTreeScalersurveillance.t" spec="ScaleOperator" scaleFactor="0.5" tree="@Treesurveillance" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialTreeRootScalersurveillance.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Treesurveillance" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialUniformOperatorsurveillance.t" spec="Uniform" tree="@Treesurveillance" weight="20.833333333333336"/>
+<operator id="BDSKY_SerialSubtreeSlidesurveillance.t" spec="SubtreeSlide" tree="@Treesurveillance" weight="10.416666666666668"/>
+<operator id="BDSKY_SerialNarrowsurveillance.t" spec="Exchange" tree="@Treesurveillance" weight="10.416666666666668"/>
+<operator id="BDSKY_SerialWidesurveillance.t" spec="Exchange" isNarrow="false" tree="@Treesurveillance" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialWilsonBaldingsurveillance.t" spec="WilsonBalding" tree="@Treesurveillance" weight="2.0833333333333335"/>
+
+<operator id="BDSKY_SerialTreeScalerward-D.t" spec="ScaleOperator" scaleFactor="0.5" tree="@Treeward-D" weight="0.9583333333333334"/>
+<operator id="BDSKY_SerialTreeRootScalerward-D.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@Treeward-D" weight="0.9583333333333334"/>
+<operator id="BDSKY_SerialUniformOperatorward-D.t" spec="Uniform" tree="@Treeward-D" weight="9.583333333333334"/>
+<operator id="BDSKY_SerialSubtreeSlideward-D.t" spec="SubtreeSlide" tree="@Treeward-D" weight="4.791666666666667"/>
+<operator id="BDSKY_SerialNarrowward-D.t" spec="Exchange" tree="@Treeward-D" weight="4.791666666666667"/>
+<operator id="BDSKY_SerialWideward-D.t" spec="Exchange" isNarrow="false" tree="@Treeward-D" weight="0.9583333333333334"/>
+<operator id="BDSKY_SerialWilsonBaldingward-D.t" spec="WilsonBalding" tree="@Treeward-D" weight="0.9583333333333334"/>
+
+
+<operator id='R0Operator' spec='ScaleOperator' scaleFactor=".75" weight="2" parameter="@baseReproductiveNumber.t"/>
+
+
+<!-- lambda_ratio FIXED-->
+<plate var='n' range='surveillance'>
+		<operator id='sOperator_$(n)' spec='ScaleOperator' scaleFactor=".75" weight="2" parameter="@samplingProportion$(n).t"/>
+		<operator id="updown2_$(n)" spec="UpDownOperator" scaleFactor=".9" weight="2" up="@baseReproductiveNumber.t" down="@samplingProportion$(n).t"/>
+</plate>
+
+
+<!-- lambda_ratio estimated -->
+<plate var='n' range='ward-D'>
+		<operator id='sOperator_$(n)' spec='ScaleOperator' scaleFactor=".75" weight="2" parameter="@samplingProportion$(n).t"/>
+		<operator id="updown2_$(n)" spec="UpDownOperator" scaleFactor=".9" weight="2" up="@baseReproductiveNumber.t" down="@samplingProportion$(n).t"/>
+</plate>
+    	<plate var='n' range='ward-D'>
+			<operator id="lambda_ratioScaler$(n).t" spec="ScaleOperator" parameter="@lambda_ratio_$(n)" scaleFactor="0.75" weight="1.0"/>
+		</plate>
+
+
+<operator id="FrequenciesExchanger.s" spec="DeltaExchangeOperator" delta="0.01" weight="0.4">
+    <parameter idref="freqParameter.s"/>
+</operator>
+
+<operator id="KappaScaler.s" spec="ScaleOperator" parameter="@kappa.s" scaleFactor="0.5" weight="0.1"/>
+
+<operator id="gammaShapeScaler.c" spec="ScaleOperator" parameter="@gammaShape.s" scaleFactor="0.75" weight="0.2"/>
+
+<logger id="tracelog" fileName="$(filebase).$(seed).log" logEvery="1000" model="@posterior" >
+    <log idref="posterior"/>
+    <log idref="likelihood"/>
+    <log idref="prior"/>
+    <log idref="treePriors"/>
+    <log idref="kappa.s"/>
+    <log idref="becomeUninfectiousRate.t"/>
+    
+
+   	<log idref="baseReproductiveNumber.t"/>
+	<plate var='n' range='ward-D,surveillance'>
+		<log idref="lambda_ratio_$(n)"/>
+	</plate>
+
+    <plate var='n' range='surveillance,ward-D'>
+    	<log idref="samplingProportion$(n).t"/>
+    </plate>
+
+    <log idref="freqParameter.s"/>
+    <log idref="gammaShape.s"/>
+    <log idref="clockRate.c"/>
+    <plate var='n' range='surveillance,ward-D'>
+        <log idref="BDSKY_Serial.$(n)"/>
+    </plate>
+    <plate var='n' range='surveillance,ward-D'>
+        <log id="treeHeight$(n)" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree$(n)"/>
+    </plate>
+    <plate var='n' range='surveillance,ward-D'>
+    	<log id="treeLength$(n)" spec="multitypetree.util.TreeLengthLogger" tree="@Tree$(n)"/>
+    </plate>
+    <plate var='n' range='surveillance,ward-D'>
+        <log idref="treeLikelihood$(n)"/>
+    </plate>
+</logger>
+
+<logger id="screenlog" logEvery="1000">
+    <log idref="posterior"/>
+    <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+    <log idref="likelihood"/>
+    <log idref="prior"/>
+</logger>
+
+<plate var='n' range='surveillance,ward-D'>
+	<logger id="treelog$(n)" fileName="$(filebase).$(seed).cluster$(n).trees" logEvery="10000" mode="tree">
+		<log id="TreeWithMetaDataLogger.$(n)" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree$(n)"/>
+	</logger>
+</plate>
+
+</run>
+
+</beast>
