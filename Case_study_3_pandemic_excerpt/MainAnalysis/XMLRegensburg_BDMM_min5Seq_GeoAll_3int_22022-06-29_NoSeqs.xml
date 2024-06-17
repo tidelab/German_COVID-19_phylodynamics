@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='MultiTypeBirthDeathUncoloured' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel:beast.evolution.substitutionmodel:beast.evolution.likelihood" version="2.0">
+
+<map name="Uniform" >beast.math.distributions.Uniform</map>
+<map name="Exponential" >beast.math.distributions.Exponential</map>
+<map name="LogNormal" >beast.math.distributions.LogNormalDistributionModel</map>
+<map name="Normal" >beast.math.distributions.Normal</map>
+<map name="Beta" >beast.math.distributions.Beta</map>
+<map name="Gamma" >beast.math.distributions.Gamma</map>
+<map name="LaplaceDistribution" >beast.math.distributions.LaplaceDistribution</map>
+<map name="prior" >beast.math.distributions.Prior</map>
+<map name="InverseGamma" >beast.math.distributions.InverseGamma</map>
+<map name="OneOnX" >beast.math.distributions.OneOnX</map>
+
+
+<data id="clusterAY.122" name="alignment"></data>
+
+<data id="clusterAY.46.6" name="alignment"></data>
+
+<data id="clusterAY.42" name="alignment"></data>
+
+<data id="clusterAY.43" name="alignment"></data>
+
+<data id="clusterAY.98.1" name="alignment"></data>
+
+<data id="clusterB.1.1.7" name="alignment"></data>
+
+<data id="clusterB.1.177" name="alignment"></data>
+
+<data id="clusterR.1" name="alignment"></data>
+
+<data id="clusterB.1.621.1" name="alignment"></data>
+
+<data id="clusterAY.126" name="alignment"></data>
+
+<data id="clusterAY.4" name="alignment"></data>
+
+<data id="clusterB.1.617.2" name="alignment"></data>
+
+<data id="clusterAY.9.2" name="alignment"></data>
+
+<data id="clusterB.1.351" name="alignment"></data>
+
+<data id="clusterAY.4.2" name="alignment"></data>
+
+<data id="clusterB.1.258.17" name="alignment"></data>
+
+<data id="clusterB.1.258" name="alignment"></data>
+
+<data id="clusterAY.4.6" name="alignment"></data>
+
+<data id="clusterB.1.1.39" name="alignment"></data>
+
+<data id="clusterB.1.177.81" name="alignment"></data>
+
+<data id="clusterB.1" name="alignment"></data>
+
+<data id="clusterB.1.221" name="alignment"></data>
+
+<data id="clusterB.1.1.318" name="alignment"></data>
+
+<data id="clusterB.1.160" name="alignment"></data>
+
+<data id="clusterAY.34" name="alignment"></data>
+
+<parameter id="birthChangeAmongDemesTimesAY.122" name="birthRateChangeAmongDemesTimes">0.0 0.268 0.541</parameter> <parameter id="deathRateChangeTimesAY.122" name="deathRateChangeTimes">0.0 0.268 0.541</parameter>
+<parameter id="samplingRateChangeTimesAY.122" name="samplingRateChangeTimes">0.0 0.268 0.541 0.792</parameter> <parameter id="birthChangeAmongDemesTimesAY.46.6" name="birthRateChangeAmongDemesTimes">0.0 0.268 0.541</parameter> <parameter id="deathRateChangeTimesAY.46.6" name="deathRateChangeTimes">0.0 0.268 0.541</parameter>
+<parameter id="samplingRateChangeTimesAY.46.6" name="samplingRateChangeTimes">0.0 0.268 0.541 0.792</parameter> <parameter id="birthChangeAmongDemesTimesAY.42" name="birthRateChangeAmongDemesTimes">0.0 0.126 0.399</parameter> <parameter id="deathRateChangeTimesAY.42" name="deathRateChangeTimes">0.0 0.126 0.399</parameter>
+<parameter id="samplingRateChangeTimesAY.42" name="samplingRateChangeTimes">0.0 0.126 0.399 0.65</parameter> <parameter id="birthChangeAmongDemesTimesAY.43" name="birthRateChangeAmongDemesTimes">0.0 0.26 0.533</parameter> <parameter id="deathRateChangeTimesAY.43" name="deathRateChangeTimes">0.0 0.26 0.533</parameter>
+<parameter id="samplingRateChangeTimesAY.43" name="samplingRateChangeTimes">0.0 0.26 0.533 0.784</parameter> <parameter id="birthChangeAmongDemesTimesAY.98.1" name="birthRateChangeAmongDemesTimes">0.0 0.26 0.533</parameter> <parameter id="deathRateChangeTimesAY.98.1" name="deathRateChangeTimes">0.0 0.26 0.533</parameter>
+<parameter id="samplingRateChangeTimesAY.98.1" name="samplingRateChangeTimes">0.0 0.26 0.533 0.784</parameter> <parameter id="birthChangeAmongDemesTimesB.1.1.7" name="birthRateChangeAmongDemesTimes">0.0 0.028 0.301</parameter> <parameter id="deathRateChangeTimesB.1.1.7" name="deathRateChangeTimes">0.0 0.028 0.301</parameter>
+<parameter id="samplingRateChangeTimesB.1.1.7" name="samplingRateChangeTimes">0.0 0.028 0.301 0.552</parameter> <parameter id="birthChangeAmongDemesTimesAY.120" name="birthRateChangeAmongDemesTimes">0.0 0.249 0.522</parameter> <parameter id="deathRateChangeTimesAY.120" name="deathRateChangeTimes">0.0 0.249 0.522</parameter>
+<parameter id="samplingRateChangeTimesAY.120" name="samplingRateChangeTimes">0.0 0.249 0.522 0.773</parameter> <parameter id="birthChangeAmongDemesTimesB.1.177" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.017</parameter> <parameter id="deathRateChangeTimesB.1.177" name="deathRateChangeTimes">0.0 0.0 0.017</parameter>
+<parameter id="samplingRateChangeTimesB.1.177" name="samplingRateChangeTimes">0.0 0.0 0.017 0.268</parameter> <parameter id="birthChangeAmongDemesTimesB.1.177.62" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.177.62" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.177.62" name="samplingRateChangeTimes">0.0 0.0 0.0 0.248</parameter> <parameter id="birthChangeAmongDemesTimesR.1" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.014</parameter> <parameter id="deathRateChangeTimesR.1" name="deathRateChangeTimes">0.0 0.0 0.014</parameter>
+<parameter id="samplingRateChangeTimesR.1" name="samplingRateChangeTimes">0.0 0.0 0.014 0.265</parameter> <parameter id="birthChangeAmongDemesTimesB.1.621.1" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.167</parameter> <parameter id="deathRateChangeTimesB.1.621.1" name="deathRateChangeTimes">0.0 0.0 0.167</parameter>
+<parameter id="samplingRateChangeTimesB.1.621.1" name="samplingRateChangeTimes">0.0 0.0 0.167 0.418</parameter> <parameter id="birthChangeAmongDemesTimesAY.126" name="birthRateChangeAmongDemesTimes">0.0 0.268 0.541</parameter> <parameter id="deathRateChangeTimesAY.126" name="deathRateChangeTimes">0.0 0.268 0.541</parameter>
+<parameter id="samplingRateChangeTimesAY.126" name="samplingRateChangeTimes">0.0 0.268 0.541 0.792</parameter> <parameter id="birthChangeAmongDemesTimesAY.4" name="birthRateChangeAmongDemesTimes">0.0 0.26 0.533</parameter> <parameter id="deathRateChangeTimesAY.4" name="deathRateChangeTimes">0.0 0.26 0.533</parameter>
+<parameter id="samplingRateChangeTimesAY.4" name="samplingRateChangeTimes">0.0 0.26 0.533 0.784</parameter> <parameter id="birthChangeAmongDemesTimesB.1.617.2" name="birthRateChangeAmongDemesTimes">0.0 0.238 0.511</parameter> <parameter id="deathRateChangeTimesB.1.617.2" name="deathRateChangeTimes">0.0 0.238 0.511</parameter>
+<parameter id="samplingRateChangeTimesB.1.617.2" name="samplingRateChangeTimes">0.0 0.238 0.511 0.762</parameter> <parameter id="birthChangeAmongDemesTimesAY.9.2" name="birthRateChangeAmongDemesTimes">0.0 0.203 0.476</parameter> <parameter id="deathRateChangeTimesAY.9.2" name="deathRateChangeTimes">0.0 0.203 0.476</parameter>
+<parameter id="samplingRateChangeTimesAY.9.2" name="samplingRateChangeTimes">0.0 0.203 0.476 0.727</parameter> <parameter id="birthChangeAmongDemesTimesB.1.351" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.351" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.351" name="samplingRateChangeTimes">0.0 0.0 0.0 0.232</parameter> <parameter id="birthChangeAmongDemesTimesC.36.3.1" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.091</parameter> <parameter id="deathRateChangeTimesC.36.3.1" name="deathRateChangeTimes">0.0 0.0 0.091</parameter>
+<parameter id="samplingRateChangeTimesC.36.3.1" name="samplingRateChangeTimes">0.0 0.0 0.091 0.341</parameter> <parameter id="birthChangeAmongDemesTimesAY.4.2" name="birthRateChangeAmongDemesTimes">0.0 0.263 0.536</parameter> <parameter id="deathRateChangeTimesAY.4.2" name="deathRateChangeTimes">0.0 0.263 0.536</parameter>
+<parameter id="samplingRateChangeTimesAY.4.2" name="samplingRateChangeTimes">0.0 0.263 0.536 0.787</parameter> <parameter id="birthChangeAmongDemesTimesAY.41" name="birthRateChangeAmongDemesTimes">0.0 0.143 0.416</parameter> <parameter id="deathRateChangeTimesAY.41" name="deathRateChangeTimes">0.0 0.143 0.416</parameter>
+<parameter id="samplingRateChangeTimesAY.41" name="samplingRateChangeTimes">0.0 0.143 0.416 0.666</parameter> <parameter id="birthChangeAmongDemesTimesB.1.258.17" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.014</parameter> <parameter id="deathRateChangeTimesB.1.258.17" name="deathRateChangeTimes">0.0 0.0 0.014</parameter>
+<parameter id="samplingRateChangeTimesB.1.258.17" name="samplingRateChangeTimes">0.0 0.0 0.014 0.265</parameter> <parameter id="birthChangeAmongDemesTimesB.1.258" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.258" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.258" name="samplingRateChangeTimes">0.0 0.0 0.0 0.246</parameter> <parameter id="birthChangeAmongDemesTimesAY.103-0" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.167</parameter> <parameter id="deathRateChangeTimesAY.103-0" name="deathRateChangeTimes">0.0 0.0 0.167</parameter>
+<parameter id="samplingRateChangeTimesAY.103-0" name="samplingRateChangeTimes">0.0 0.0 0.167 0.418</parameter> <parameter id="birthChangeAmongDemesTimesAY.4.6" name="birthRateChangeAmongDemesTimes">0.0 0.257 0.531</parameter> <parameter id="deathRateChangeTimesAY.4.6" name="deathRateChangeTimes">0.0 0.257 0.531</parameter>
+<parameter id="samplingRateChangeTimesAY.4.6" name="samplingRateChangeTimes">0.0 0.257 0.531 0.781</parameter> <parameter id="birthChangeAmongDemesTimesB.1.1.39" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.1.39" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.1.39" name="samplingRateChangeTimes">0.0 0.0 0.0 0.172</parameter> <parameter id="birthChangeAmongDemesTimesAY.68" name="birthRateChangeAmongDemesTimes">0.0 0.123 0.397</parameter> <parameter id="deathRateChangeTimesAY.68" name="deathRateChangeTimes">0.0 0.123 0.397</parameter>
+<parameter id="samplingRateChangeTimesAY.68" name="samplingRateChangeTimes">0.0 0.123 0.397 0.647</parameter> <parameter id="birthChangeAmongDemesTimesB.1.177.81" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.177.81" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.177.81" name="samplingRateChangeTimes">0.0 0.0 0.0 0.229</parameter> <parameter id="birthChangeAmongDemesTimesB.1.525" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.006</parameter> <parameter id="deathRateChangeTimesB.1.525" name="deathRateChangeTimes">0.0 0.0 0.006</parameter>
+<parameter id="samplingRateChangeTimesB.1.525" name="samplingRateChangeTimes">0.0 0.0 0.006 0.257</parameter> <parameter id="birthChangeAmongDemesTimesB.1" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1" name="samplingRateChangeTimes">0.0 0.0 0.0 0.229</parameter> <parameter id="birthChangeAmongDemesTimesAY.5" name="birthRateChangeAmongDemesTimes">0.0 0.238 0.511</parameter> <parameter id="deathRateChangeTimesAY.5" name="deathRateChangeTimes">0.0 0.238 0.511</parameter>
+<parameter id="samplingRateChangeTimesAY.5" name="samplingRateChangeTimes">0.0 0.238 0.511 0.762</parameter> <parameter id="birthChangeAmongDemesTimesAY.121-1" name="birthRateChangeAmongDemesTimes">0.0 0.244 0.517</parameter> <parameter id="deathRateChangeTimesAY.121-1" name="deathRateChangeTimes">0.0 0.244 0.517</parameter>
+<parameter id="samplingRateChangeTimesAY.121-1" name="samplingRateChangeTimes">0.0 0.244 0.517 0.768</parameter> <parameter id="birthChangeAmongDemesTimesAY.9" name="birthRateChangeAmongDemesTimes">0.0 0.205 0.479</parameter> <parameter id="deathRateChangeTimesAY.9" name="deathRateChangeTimes">0.0 0.205 0.479</parameter>
+<parameter id="samplingRateChangeTimesAY.9" name="samplingRateChangeTimes">0.0 0.205 0.479 0.729</parameter> <parameter id="birthChangeAmongDemesTimesB.1.221" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.221" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.221" name="samplingRateChangeTimes">0.0 0.0 0.0 0.18</parameter> <parameter id="birthChangeAmongDemesTimesB.1.1.318" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.014</parameter> <parameter id="deathRateChangeTimesB.1.1.318" name="deathRateChangeTimes">0.0 0.0 0.014</parameter>
+<parameter id="samplingRateChangeTimesB.1.1.318" name="samplingRateChangeTimes">0.0 0.0 0.014 0.265</parameter> <parameter id="birthChangeAmongDemesTimesP.1.1" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.145</parameter> <parameter id="deathRateChangeTimesP.1.1" name="deathRateChangeTimes">0.0 0.0 0.145</parameter>
+<parameter id="samplingRateChangeTimesP.1.1" name="samplingRateChangeTimes">0.0 0.0 0.145 0.396</parameter> <parameter id="birthChangeAmongDemesTimesAY.120.2.1" name="birthRateChangeAmongDemesTimes">0.0 0.009 0.282</parameter> <parameter id="deathRateChangeTimesAY.120.2.1" name="deathRateChangeTimes">0.0 0.009 0.282</parameter>
+<parameter id="samplingRateChangeTimesAY.120.2.1" name="samplingRateChangeTimes">0.0 0.009 0.282 0.533</parameter> <parameter id="birthChangeAmongDemesTimesB.1.160" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.160" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.160" name="samplingRateChangeTimes">0.0 0.0 0.0 0.112</parameter> <parameter id="birthChangeAmongDemesTimesAY.33-1" name="birthRateChangeAmongDemesTimes">0.0 0.266 0.539</parameter> <parameter id="deathRateChangeTimesAY.33-1" name="deathRateChangeTimes">0.0 0.266 0.539</parameter>
+<parameter id="samplingRateChangeTimesAY.33-1" name="samplingRateChangeTimes">0.0 0.266 0.539 0.789</parameter> <parameter id="birthChangeAmongDemesTimesB.1.1.317" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.1.317" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.1.317" name="samplingRateChangeTimes">0.0 0.0 0.0 0.153</parameter> <parameter id="birthChangeAmongDemesTimesB.1.177.77" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.177.77" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.177.77" name="samplingRateChangeTimes">0.0 0.0 0.0 0.022</parameter> <parameter id="birthChangeAmongDemesTimesAY.34" name="birthRateChangeAmongDemesTimes">0.0 0.266 0.539</parameter> <parameter id="deathRateChangeTimesAY.34" name="deathRateChangeTimes">0.0 0.266 0.539</parameter>
+<parameter id="samplingRateChangeTimesAY.34" name="samplingRateChangeTimes">0.0 0.266 0.539 0.789</parameter> <parameter id="birthChangeAmongDemesTimesP.1" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.134</parameter> <parameter id="deathRateChangeTimesP.1" name="deathRateChangeTimes">0.0 0.0 0.134</parameter>
+<parameter id="samplingRateChangeTimesP.1" name="samplingRateChangeTimes">0.0 0.0 0.134 0.385</parameter> <parameter id="birthChangeAmongDemesTimesAY.125" name="birthRateChangeAmongDemesTimes">0.0 0.244 0.517</parameter> <parameter id="deathRateChangeTimesAY.125" name="deathRateChangeTimes">0.0 0.244 0.517</parameter>
+<parameter id="samplingRateChangeTimesAY.125" name="samplingRateChangeTimes">0.0 0.244 0.517 0.768</parameter> <parameter id="birthChangeAmongDemesTimesAY.34.1" name="birthRateChangeAmongDemesTimes">0.0 0.104 0.378</parameter> <parameter id="deathRateChangeTimesAY.34.1" name="deathRateChangeTimes">0.0 0.104 0.378</parameter>
+<parameter id="samplingRateChangeTimesAY.34.1" name="samplingRateChangeTimes">0.0 0.104 0.378 0.628</parameter> <parameter id="birthChangeAmongDemesTimesB.1.1" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.1" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.1" name="samplingRateChangeTimes">0.0 0.0 0.0 0.115</parameter> <parameter id="birthChangeAmongDemesTimesB.1.258.14" name="birthRateChangeAmongDemesTimes">0.0 0.0 0.0</parameter> <parameter id="deathRateChangeTimesB.1.258.14" name="deathRateChangeTimes">0.0 0.0 0.0</parameter>
+<parameter id="samplingRateChangeTimesB.1.258.14" name="samplingRateChangeTimes">0.0 0.0 0.0 0.054</parameter> 
+
+<reverseTimeArrays id="reverseTimeArrays" spec="parameter.BooleanParameter" dimension="4">true true true false false false</reverseTimeArrays>
+<parameter id="identicalRatesForAllTypes" name="identicalRatesForAllTypes" spec="parameter.BooleanParameter" dimension="6">false true false false false true</parameter>
+
+
+<siteModel id="SiteModel.s" spec="SiteModel">
+    <parameter id="mutationRate.s" estimate="false" name="mutationRate">1.0</parameter>
+    <parameter id="gammaShape.s" estimate="true" name="shape">1.0</parameter>
+    <parameter id="proportionInvariant.s" estimate="false" lower="0.0" name="proportionInvariant" upper="1.0">0.0</parameter>
+    <substModel id="hky.s" spec="HKY" kappa="@kappa.s">
+        <frequencies id="estimatedFreqs.s" spec="Frequencies" frequencies="@freqParameter.s"/>
+    </substModel>
+</siteModel>
+
+<taxa id="TaxonSetAY.122" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.122"/>		    </taxa>
+<taxa id="TaxonSetAY.46.6" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.46.6"/>		    </taxa>
+<taxa id="TaxonSetAY.42" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.42"/>		    </taxa>
+<taxa id="TaxonSetAY.43" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.43"/>		    </taxa>
+<taxa id="TaxonSetAY.98.1" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.98.1"/>		    </taxa>
+<taxa id="TaxonSetB.1.1.7" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.1.7"/>		    </taxa>
+<taxa id="TaxonSetB.1.177" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.177"/>		    </taxa>
+<taxa id="TaxonSetR.1" 	    	spec="TaxonSet">	    		<alignment idref="clusterR.1"/>		    </taxa>
+<taxa id="TaxonSetB.1.621.1" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.621.1"/>		    </taxa>
+<taxa id="TaxonSetAY.126" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.126"/>		    </taxa>
+<taxa id="TaxonSetAY.4" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.4"/>		    </taxa>
+<taxa id="TaxonSetB.1.617.2" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.617.2"/>		    </taxa>
+<taxa id="TaxonSetAY.9.2" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.9.2"/>		    </taxa>
+<taxa id="TaxonSetB.1.351" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.351"/>		    </taxa>
+<taxa id="TaxonSetAY.4.2" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.4.2"/>		    </taxa>
+<taxa id="TaxonSetB.1.258.17" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.258.17"/>		    </taxa>
+<taxa id="TaxonSetB.1.258" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.258"/>		    </taxa>
+<taxa id="TaxonSetAY.4.6" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.4.6"/>		    </taxa>
+<taxa id="TaxonSetB.1.1.39" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.1.39"/>		    </taxa>
+<taxa id="TaxonSetB.1.177.81" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.177.81"/>		    </taxa>
+<taxa id="TaxonSetB.1" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1"/>		    </taxa>
+<taxa id="TaxonSetB.1.221" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.221"/>		    </taxa>
+<taxa id="TaxonSetB.1.1.318" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.1.318"/>		    </taxa>
+<taxa id="TaxonSetB.1.160" 	    	spec="TaxonSet">	    		<alignment idref="clusterB.1.160"/>		    </taxa>
+<taxa id="TaxonSetAY.34" 	    	spec="TaxonSet">	    		<alignment idref="clusterAY.34"/>		    </taxa>
+
+<tipTypeArray spec="beast.core.parameter.IntegerParameter" name="tipTypeArray" id="tipTypeArray" dimension="331" value="0"/>
+<parameter name="frequencies" id="frequencies" value="0.0 1.0"/>
+
+<run id="mcmc" spec="MCMC" chainLength="400000000" numInitializationAttempts="50000">
+
+<init id="TreeAY.122" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.122">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.122" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.122" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.122"/>		</init>
+
+<init id="TreeAY.46.6" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.46.6">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.46.6" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.46.6" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.46.6"/>		</init>
+
+<init id="TreeAY.42" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.42">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.42" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.42" dateFormat="yyyy-MM-dd" traitname="date" value="C2305_91595_2021-08-27=2021-08-27,C2227_94089_2021-08-17=2021-08-17,C2161_30974_2021-08-02=2021-08-02,C2334_94081_2021-09-01=2021-09-01,C2400_94081_2021-09-07=2021-09-07,C2350_93077_2021-09-02=2021-09-02,C2211_84503_2021-08-15=2021-08-15,C2323_94209_2021-08-30=2021-08-30">		</trait>			<taxonset idref="TaxonSetAY.42"/>		</init>
+
+<init id="TreeAY.43" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.43">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.43" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.43" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.43"/>		</init>
+
+<init id="TreeAY.98.1" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.98.1">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.98.1" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.98.1" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.98.1"/>		</init>
+
+<init id="TreeB.1.1.7" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.1.7">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.1.7" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.1.7" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.1.7"/>		</init>
+
+<init id="TreeB.1.177" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.177">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.177" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.177" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.177"/>		</init>
+
+<init id="TreeR.1" spec="beast.evolution.tree.RandomTree" taxa="@clusterR.1">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitR.1" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetR.1" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetR.1"/>		</init>
+
+<init id="TreeB.1.621.1" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.621.1">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.621.1" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.621.1" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.621.1"/>		</init>
+
+<init id="TreeAY.126" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.126">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.126" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.126" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.126"/>		</init>
+
+<init id="TreeAY.4" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.4">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.4" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.4" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.4"/>		</init>
+
+<init id="TreeB.1.617.2" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.617.2">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.617.2" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.617.2" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.617.2"/>		</init>
+
+<init id="TreeAY.9.2" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.9.2">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.9.2" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.9.2" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.9.2"/>		</init>
+
+<init id="TreeB.1.351" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.351">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.351" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.351" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.351"/>		</init>
+
+<init id="TreeAY.4.2" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.4.2">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.4.2" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.4.2" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.4.2"/>		</init>
+
+<init id="TreeB.1.258.17" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.258.17">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.258.17" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.258.17" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.258.17"/>		</init>
+
+<init id="TreeB.1.258" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.258">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.258" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.258" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.258"/>		</init>
+
+<init id="TreeAY.4.6" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.4.6">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.4.6" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.4.6" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.4.6"/>		</init>
+
+<init id="TreeB.1.1.39" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.1.39">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.1.39" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.1.39" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.1.39"/>		</init>
+
+<init id="TreeB.1.177.81" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.177.81">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.177.81" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.177.81" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.177.81"/>		</init>
+
+<init id="TreeB.1" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1"/>		</init>
+
+<init id="TreeB.1.221" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.221">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.221" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.221" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.221"/>		</init>
+
+<init id="TreeB.1.1.318" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.1.318">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.1.318" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.1.318" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.1.318"/>		</init>
+
+<init id="TreeB.1.160" spec="beast.evolution.tree.RandomTree" taxa="@clusterB.1.160">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitB.1.160" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetB.1.160" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetB.1.160"/>		</init>
+
+<init id="TreeAY.34" spec="beast.evolution.tree.RandomTree" taxa="@clusterAY.34">			<populationModel spec="beast.evolution.tree.coalescent.ConstantPopulation" popSize="0.1"/>				<trait id="dateTraitAY.34" spec="beast.evolution.tree.TraitSet" taxa="@TaxonSetAY.34" dateFormat="yyyy-MM-dd" traitname="date" value="N">		</trait>			<taxonset idref="TaxonSetAY.34"/>		</init>
+
+<state id="state" storeEvery="5000">
+    <plate var='n' range='AY.122,AY.46.6,AY.42,AY.43,AY.98.1,B.1.1.7,B.1.177,R.1,B.1.621.1,AY.126,AY.4,B.1.617.2,AY.9.2,B.1.351,AY.4.2,B.1.258.17,B.1.258,AY.4.6,B.1.1.39,B.1.177.81,B.1,B.1.221,B.1.1.318,B.1.160,AY.34'>
+		<stateNode idref="Tree$(n)"/>   
+    </plate>
+    <parameter id="becomeUninfectiousRate.t" dimension="2" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">36.5 36.5</parameter>
+    <parameter id="reproductiveNumber.t" dimension="6" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="Infinity">1.5 1.5 1.5 1.5 1.5 1.5</parameter>
+    <parameter id="samplingProportion.t" dimension="6" spec="parameter.RealParameter" lower="0.0" name="stateNode" upper="1.0">0.05 0.05 0.05 0.0 0.0 0.0</parameter>
+    <parameter id="migrationMatrix" spec="parameter.RealParameter" name="stateNode" value="1.0 1.0"/>
+    <parameter id="clockRate.c" spec="parameter.RealParameter" name="stateNode">0.0008</parameter>
+    <parameter id="kappa.s" spec="parameter.RealParameter" lower="0.0" name="stateNode">2.0</parameter>
+    <parameter id="freqParameter.s" spec="parameter.RealParameter" dimension="4" lower="0.0" name="stateNode" upper="1.0">0.25</parameter>
+    <stateNode idref="gammaShape.s"/>
+</state>
+
+<distribution id="posterior" spec="util.CompoundDistribution">
+    <distribution id="prior" spec="util.CompoundDistribution">
+     	<distribution id="treePriors" spec="util.CompoundDistribution">
+			<plate var='n' range='AY.122,AY.46.6,AY.42,AY.43,AY.98.1,B.1.1.7,B.1.177,R.1,B.1.621.1,AY.126,AY.4,B.1.617.2,AY.9.2,B.1.351,AY.4.2,B.1.258.17,B.1.258,AY.4.6,B.1.1.39,B.1.177.81,B.1,B.1.221,B.1.1.318,B.1.160,AY.34'>
+                <distribution id="BDMM$(n)" spec="beast.evolution.speciation.BirthDeathMigrationModelUncoloured"
+            	becomeUninfectiousRate="@becomeUninfectiousRate.t"  checkRho="false" R0="@reproductiveNumber.t" samplingProportion="@samplingProportion.t" reverseTimeArrays="@reverseTimeArrays" identicalRatesForAllTypes="@identicalRatesForAllTypes" tree="@Tree$(n)" stateNumber="2" migrationMatrix="@migrationMatrix" frequencies="@frequencies" tipTypeArray="@tipTypeArray" birthRateChangeTimes="@birthChangeAmongDemesTimes$(n)" samplingRateChangeTimes="@birthChangeAmongDemesTimes$(n)"/>
+			</plate>
+        </distribution>
+
+        <distribution id="becomeUninfectiousRatePrior.t0" spec="beast.math.distributions.ExcludablePrior" name="distribution" x="@becomeUninfectiousRate.t">
+         <xInclude id="becomeUninfectiousRateXInclude.t0" spec="parameter.BooleanParameter" dimension="1">true true</xInclude>
+            <Normal id="NormalDistributionModel.0" name="distr">
+                <parameter id="RealParameter.00" spec="parameter.RealParameter" estimate="false" name="mean">36.5</parameter>
+                <parameter id="RealParameter.01" spec="parameter.RealParameter" estimate="false" name="sigma">1</parameter>
+            </Normal>
+        </distribution>
+        <prior id="FrequenciesPrior.s" name="distribution" x="@freqParameter.s">
+             <Uniform id="Uniform.128" name="distr"/>
+        </prior>
+
+        <prior id="KappaPrior.s" name="distribution" x="@kappa.s">
+            <LogNormal id="LogNormalDistributionModel.346" name="distr">
+                <parameter id="RealParameter.319" spec="parameter.RealParameter" estimate="false" name="M">1.0</parameter>
+                <parameter id="RealParameter.870" spec="parameter.RealParameter" estimate="false" name="S">1.25</parameter>
+            </LogNormal>
+        </prior>
+
+        <distribution spec="beast.math.distributions.ExcludablePrior" xInclude="true true true true true true" id="reproductiveNumberPrior.t" name="distribution" x="@reproductiveNumber.t">
+            <LogNormal id="LogNormalDistributionModel.0" name="distr">
+                <parameter id="RealParameter.294" spec="parameter.RealParameter" estimate="false" name="M">0.0</parameter>
+                <parameter id="RealParameter.729" spec="parameter.RealParameter" estimate="false" name="S">4.0</parameter>
+            </LogNormal>
+        </distribution>
+
+        <prior id="GammaShapePrior.s" name="distribution" x="@gammaShape.s">
+            <Exponential id="Exponential.594" name="distr" mean="1.0"/>
+        </prior>
+
+        <distribution id="samplingProportionPrior.t0" spec="multitypetree.distributions.ExcludablePrior" x="@samplingProportion.t">
+            <xInclude id="samplingProportionXInclude.t0" spec="parameter.BooleanParameter" dimension="3">true true true false false false</xInclude>
+            <Beta id="Beta.412" name="distr">
+                <parameter id="RealParameter.588" spec="parameter.RealParameter" estimate="false" name="alpha">50.0</parameter>
+                <parameter id="RealParameter.508" spec="parameter.RealParameter" estimate="false" name="beta">950.0</parameter>
+            </Beta>
+        </distribution>
+
+        <prior id='migrationMatrixPrior' name="distribution" x='@migrationMatrix'>
+            <distr spec='beast.math.distributions.Exponential'>
+                <parameter name="mean" value="1.0" estimate="false"/> 
+            </distr>    
+        </prior>
+
+    </distribution>
+
+    <distribution id="likelihood" spec="util.CompoundDistribution">
+	    <plate var='n' range='AY.122,AY.46.6,AY.42,AY.43,AY.98.1,B.1.1.7,B.1.177,R.1,B.1.621.1,AY.126,AY.4,B.1.617.2,AY.9.2,B.1.351,AY.4.2,B.1.258.17,B.1.258,AY.4.6,B.1.1.39,B.1.177.81,B.1,B.1.221,B.1.1.318,B.1.160,AY.34'>
+			<distribution id="treeLikelihood$(n)" spec="TreeLikelihood" data="@cluster$(n)" tree="@Tree$(n)" siteModel="@SiteModel.s"  useAmbiguities="true">
+				<branchRateModel id="StrictClock$(n)" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c"/>
+	        </distribution>
+		</plate>
+    </distribution>
+</distribution>
+
+<operator id="BDSKY_SerialTreeScalerAY.122.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.122" weight="2.5"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.122.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.122" weight="2.5"/>
+<operator id="BDSKY_SerialUniformOperatorAY.122.t" spec="Uniform" tree="@TreeAY.122" weight="25.0"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.122.t" spec="SubtreeSlide" tree="@TreeAY.122" weight="12.5"/>
+<operator id="BDSKY_SerialNarrowAY.122.t" spec="Exchange" tree="@TreeAY.122" weight="12.5"/>
+<operator id="BDSKY_SerialWideAY.122.t" spec="Exchange" isNarrow="false" tree="@TreeAY.122" weight="2.5"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.122.t" spec="WilsonBalding" tree="@TreeAY.122" weight="2.5"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.46.6.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.46.6" weight="1.2083333333333333"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.46.6.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.46.6" weight="1.2083333333333333"/>
+<operator id="BDSKY_SerialUniformOperatorAY.46.6.t" spec="Uniform" tree="@TreeAY.46.6" weight="12.083333333333332"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.46.6.t" spec="SubtreeSlide" tree="@TreeAY.46.6" weight="6.041666666666666"/>
+<operator id="BDSKY_SerialNarrowAY.46.6.t" spec="Exchange" tree="@TreeAY.46.6" weight="6.041666666666666"/>
+<operator id="BDSKY_SerialWideAY.46.6.t" spec="Exchange" isNarrow="false" tree="@TreeAY.46.6" weight="1.2083333333333333"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.46.6.t" spec="WilsonBalding" tree="@TreeAY.46.6" weight="1.2083333333333333"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.42.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.42" weight="0.3333333333333333"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.42.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.42" weight="0.3333333333333333"/>
+<operator id="BDSKY_SerialUniformOperatorAY.42.t" spec="Uniform" tree="@TreeAY.42" weight="3.333333333333333"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.42.t" spec="SubtreeSlide" tree="@TreeAY.42" weight="1.6666666666666665"/>
+<operator id="BDSKY_SerialNarrowAY.42.t" spec="Exchange" tree="@TreeAY.42" weight="1.6666666666666665"/>
+<operator id="BDSKY_SerialWideAY.42.t" spec="Exchange" isNarrow="false" tree="@TreeAY.42" weight="0.3333333333333333"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.42.t" spec="WilsonBalding" tree="@TreeAY.42" weight="0.3333333333333333"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.43.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.43" weight="2.5416666666666665"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.43.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.43" weight="2.5416666666666665"/>
+<operator id="BDSKY_SerialUniformOperatorAY.43.t" spec="Uniform" tree="@TreeAY.43" weight="25.416666666666664"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.43.t" spec="SubtreeSlide" tree="@TreeAY.43" weight="12.708333333333332"/>
+<operator id="BDSKY_SerialNarrowAY.43.t" spec="Exchange" tree="@TreeAY.43" weight="12.708333333333332"/>
+<operator id="BDSKY_SerialWideAY.43.t" spec="Exchange" isNarrow="false" tree="@TreeAY.43" weight="2.5416666666666665"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.43.t" spec="WilsonBalding" tree="@TreeAY.43" weight="2.5416666666666665"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.98.1.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.98.1" weight="0.4583333333333333"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.98.1.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.98.1" weight="0.4583333333333333"/>
+<operator id="BDSKY_SerialUniformOperatorAY.98.1.t" spec="Uniform" tree="@TreeAY.98.1" weight="4.583333333333333"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.98.1.t" spec="SubtreeSlide" tree="@TreeAY.98.1" weight="2.2916666666666665"/>
+<operator id="BDSKY_SerialNarrowAY.98.1.t" spec="Exchange" tree="@TreeAY.98.1" weight="2.2916666666666665"/>
+<operator id="BDSKY_SerialWideAY.98.1.t" spec="Exchange" isNarrow="false" tree="@TreeAY.98.1" weight="0.4583333333333333"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.98.1.t" spec="WilsonBalding" tree="@TreeAY.98.1" weight="0.4583333333333333"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.1.7.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.1.7" weight="13.791666666666666"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.1.7.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.1.7" weight="13.791666666666666"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.1.7.t" spec="Uniform" tree="@TreeB.1.1.7" weight="137.91666666666666"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.1.7.t" spec="SubtreeSlide" tree="@TreeB.1.1.7" weight="68.95833333333333"/>
+<operator id="BDSKY_SerialNarrowB.1.1.7.t" spec="Exchange" tree="@TreeB.1.1.7" weight="68.95833333333333"/>
+<operator id="BDSKY_SerialWideB.1.1.7.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.1.7" weight="13.791666666666666"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.1.7.t" spec="WilsonBalding" tree="@TreeB.1.1.7" weight="13.791666666666666"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.177.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.177" weight="1.7083333333333333"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.177.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.177" weight="1.7083333333333333"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.177.t" spec="Uniform" tree="@TreeB.1.177" weight="17.083333333333332"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.177.t" spec="SubtreeSlide" tree="@TreeB.1.177" weight="8.541666666666666"/>
+<operator id="BDSKY_SerialNarrowB.1.177.t" spec="Exchange" tree="@TreeB.1.177" weight="8.541666666666666"/>
+<operator id="BDSKY_SerialWideB.1.177.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.177" weight="1.7083333333333333"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.177.t" spec="WilsonBalding" tree="@TreeB.1.177" weight="1.7083333333333333"/>
+
+<operator id="BDSKY_SerialTreeScalerR.1.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeR.1" weight="0.9583333333333334"/>
+<operator id="BDSKY_SerialTreeRootScalerR.1.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeR.1" weight="0.9583333333333334"/>
+<operator id="BDSKY_SerialUniformOperatorR.1.t" spec="Uniform" tree="@TreeR.1" weight="9.583333333333334"/>
+<operator id="BDSKY_SerialSubtreeSlideR.1.t" spec="SubtreeSlide" tree="@TreeR.1" weight="4.791666666666667"/>
+<operator id="BDSKY_SerialNarrowR.1.t" spec="Exchange" tree="@TreeR.1" weight="4.791666666666667"/>
+<operator id="BDSKY_SerialWideR.1.t" spec="Exchange" isNarrow="false" tree="@TreeR.1" weight="0.9583333333333334"/>
+<operator id="BDSKY_SerialWilsonBaldingR.1.t" spec="WilsonBalding" tree="@TreeR.1" weight="0.9583333333333334"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.621.1.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.621.1" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.621.1.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.621.1" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.621.1.t" spec="Uniform" tree="@TreeB.1.621.1" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.621.1.t" spec="SubtreeSlide" tree="@TreeB.1.621.1" weight="1.0416666666666667"/>
+<operator id="BDSKY_SerialNarrowB.1.621.1.t" spec="Exchange" tree="@TreeB.1.621.1" weight="1.0416666666666667"/>
+<operator id="BDSKY_SerialWideB.1.621.1.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.621.1" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.621.1.t" spec="WilsonBalding" tree="@TreeB.1.621.1" weight="0.20833333333333334"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.126.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.126" weight="1.0833333333333333"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.126.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.126" weight="1.0833333333333333"/>
+<operator id="BDSKY_SerialUniformOperatorAY.126.t" spec="Uniform" tree="@TreeAY.126" weight="10.833333333333332"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.126.t" spec="SubtreeSlide" tree="@TreeAY.126" weight="5.416666666666666"/>
+<operator id="BDSKY_SerialNarrowAY.126.t" spec="Exchange" tree="@TreeAY.126" weight="5.416666666666666"/>
+<operator id="BDSKY_SerialWideAY.126.t" spec="Exchange" isNarrow="false" tree="@TreeAY.126" weight="1.0833333333333333"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.126.t" spec="WilsonBalding" tree="@TreeAY.126" weight="1.0833333333333333"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.4.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.4" weight="2.25"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.4.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.4" weight="2.25"/>
+<operator id="BDSKY_SerialUniformOperatorAY.4.t" spec="Uniform" tree="@TreeAY.4" weight="22.5"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.4.t" spec="SubtreeSlide" tree="@TreeAY.4" weight="11.25"/>
+<operator id="BDSKY_SerialNarrowAY.4.t" spec="Exchange" tree="@TreeAY.4" weight="11.25"/>
+<operator id="BDSKY_SerialWideAY.4.t" spec="Exchange" isNarrow="false" tree="@TreeAY.4" weight="2.25"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.4.t" spec="WilsonBalding" tree="@TreeAY.4" weight="2.25"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.617.2.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.617.2" weight="2.125"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.617.2.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.617.2" weight="2.125"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.617.2.t" spec="Uniform" tree="@TreeB.1.617.2" weight="21.25"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.617.2.t" spec="SubtreeSlide" tree="@TreeB.1.617.2" weight="10.625"/>
+<operator id="BDSKY_SerialNarrowB.1.617.2.t" spec="Exchange" tree="@TreeB.1.617.2" weight="10.625"/>
+<operator id="BDSKY_SerialWideB.1.617.2.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.617.2" weight="2.125"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.617.2.t" spec="WilsonBalding" tree="@TreeB.1.617.2" weight="2.125"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.9.2.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.9.2" weight="0.5833333333333334"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.9.2.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.9.2" weight="0.5833333333333334"/>
+<operator id="BDSKY_SerialUniformOperatorAY.9.2.t" spec="Uniform" tree="@TreeAY.9.2" weight="5.833333333333334"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.9.2.t" spec="SubtreeSlide" tree="@TreeAY.9.2" weight="2.916666666666667"/>
+<operator id="BDSKY_SerialNarrowAY.9.2.t" spec="Exchange" tree="@TreeAY.9.2" weight="2.916666666666667"/>
+<operator id="BDSKY_SerialWideAY.9.2.t" spec="Exchange" isNarrow="false" tree="@TreeAY.9.2" weight="0.5833333333333334"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.9.2.t" spec="WilsonBalding" tree="@TreeAY.9.2" weight="0.5833333333333334"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.351.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.351" weight="0.75"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.351.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.351" weight="0.75"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.351.t" spec="Uniform" tree="@TreeB.1.351" weight="7.5"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.351.t" spec="SubtreeSlide" tree="@TreeB.1.351" weight="3.75"/>
+<operator id="BDSKY_SerialNarrowB.1.351.t" spec="Exchange" tree="@TreeB.1.351" weight="3.75"/>
+<operator id="BDSKY_SerialWideB.1.351.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.351" weight="0.75"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.351.t" spec="WilsonBalding" tree="@TreeB.1.351" weight="0.75"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.4.2.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.4.2" weight="0.4583333333333333"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.4.2.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.4.2" weight="0.4583333333333333"/>
+<operator id="BDSKY_SerialUniformOperatorAY.4.2.t" spec="Uniform" tree="@TreeAY.4.2" weight="4.583333333333333"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.4.2.t" spec="SubtreeSlide" tree="@TreeAY.4.2" weight="2.2916666666666665"/>
+<operator id="BDSKY_SerialNarrowAY.4.2.t" spec="Exchange" tree="@TreeAY.4.2" weight="2.2916666666666665"/>
+<operator id="BDSKY_SerialWideAY.4.2.t" spec="Exchange" isNarrow="false" tree="@TreeAY.4.2" weight="0.4583333333333333"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.4.2.t" spec="WilsonBalding" tree="@TreeAY.4.2" weight="0.4583333333333333"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.258.17.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.258.17" weight="0.75"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.258.17.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.258.17" weight="0.75"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.258.17.t" spec="Uniform" tree="@TreeB.1.258.17" weight="7.5"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.258.17.t" spec="SubtreeSlide" tree="@TreeB.1.258.17" weight="3.75"/>
+<operator id="BDSKY_SerialNarrowB.1.258.17.t" spec="Exchange" tree="@TreeB.1.258.17" weight="3.75"/>
+<operator id="BDSKY_SerialWideB.1.258.17.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.258.17" weight="0.75"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.258.17.t" spec="WilsonBalding" tree="@TreeB.1.258.17" weight="0.75"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.258.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.258" weight="0.9166666666666666"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.258.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.258" weight="0.9166666666666666"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.258.t" spec="Uniform" tree="@TreeB.1.258" weight="9.166666666666666"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.258.t" spec="SubtreeSlide" tree="@TreeB.1.258" weight="4.583333333333333"/>
+<operator id="BDSKY_SerialNarrowB.1.258.t" spec="Exchange" tree="@TreeB.1.258" weight="4.583333333333333"/>
+<operator id="BDSKY_SerialWideB.1.258.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.258" weight="0.9166666666666666"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.258.t" spec="WilsonBalding" tree="@TreeB.1.258" weight="0.9166666666666666"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.4.6.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.4.6" weight="0.2916666666666667"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.4.6.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.4.6" weight="0.2916666666666667"/>
+<operator id="BDSKY_SerialUniformOperatorAY.4.6.t" spec="Uniform" tree="@TreeAY.4.6" weight="2.916666666666667"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.4.6.t" spec="SubtreeSlide" tree="@TreeAY.4.6" weight="1.4583333333333335"/>
+<operator id="BDSKY_SerialNarrowAY.4.6.t" spec="Exchange" tree="@TreeAY.4.6" weight="1.4583333333333335"/>
+<operator id="BDSKY_SerialWideAY.4.6.t" spec="Exchange" isNarrow="false" tree="@TreeAY.4.6" weight="0.2916666666666667"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.4.6.t" spec="WilsonBalding" tree="@TreeAY.4.6" weight="0.2916666666666667"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.1.39.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.1.39" weight="0.375"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.1.39.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.1.39" weight="0.375"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.1.39.t" spec="Uniform" tree="@TreeB.1.1.39" weight="3.75"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.1.39.t" spec="SubtreeSlide" tree="@TreeB.1.1.39" weight="1.875"/>
+<operator id="BDSKY_SerialNarrowB.1.1.39.t" spec="Exchange" tree="@TreeB.1.1.39" weight="1.875"/>
+<operator id="BDSKY_SerialWideB.1.1.39.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.1.39" weight="0.375"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.1.39.t" spec="WilsonBalding" tree="@TreeB.1.1.39" weight="0.375"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.177.81.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.177.81" weight="0.2916666666666667"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.177.81.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.177.81" weight="0.2916666666666667"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.177.81.t" spec="Uniform" tree="@TreeB.1.177.81" weight="2.916666666666667"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.177.81.t" spec="SubtreeSlide" tree="@TreeB.1.177.81" weight="1.4583333333333335"/>
+<operator id="BDSKY_SerialNarrowB.1.177.81.t" spec="Exchange" tree="@TreeB.1.177.81" weight="1.4583333333333335"/>
+<operator id="BDSKY_SerialWideB.1.177.81.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.177.81" weight="0.2916666666666667"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.177.81.t" spec="WilsonBalding" tree="@TreeB.1.177.81" weight="0.2916666666666667"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1" weight="0.4166666666666667"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1" weight="0.4166666666666667"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.t" spec="Uniform" tree="@TreeB.1" weight="4.166666666666667"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.t" spec="SubtreeSlide" tree="@TreeB.1" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialNarrowB.1.t" spec="Exchange" tree="@TreeB.1" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialWideB.1.t" spec="Exchange" isNarrow="false" tree="@TreeB.1" weight="0.4166666666666667"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.t" spec="WilsonBalding" tree="@TreeB.1" weight="0.4166666666666667"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.221.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.221" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.221.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.221" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.221.t" spec="Uniform" tree="@TreeB.1.221" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.221.t" spec="SubtreeSlide" tree="@TreeB.1.221" weight="1.0416666666666667"/>
+<operator id="BDSKY_SerialNarrowB.1.221.t" spec="Exchange" tree="@TreeB.1.221" weight="1.0416666666666667"/>
+<operator id="BDSKY_SerialWideB.1.221.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.221" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.221.t" spec="WilsonBalding" tree="@TreeB.1.221" weight="0.20833333333333334"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.1.318.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.1.318" weight="0.25"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.1.318.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.1.318" weight="0.25"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.1.318.t" spec="Uniform" tree="@TreeB.1.1.318" weight="2.5"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.1.318.t" spec="SubtreeSlide" tree="@TreeB.1.1.318" weight="1.25"/>
+<operator id="BDSKY_SerialNarrowB.1.1.318.t" spec="Exchange" tree="@TreeB.1.1.318" weight="1.25"/>
+<operator id="BDSKY_SerialWideB.1.1.318.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.1.318" weight="0.25"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.1.318.t" spec="WilsonBalding" tree="@TreeB.1.1.318" weight="0.25"/>
+
+<operator id="BDSKY_SerialTreeScalerB.1.160.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeB.1.160" weight="0.25"/>
+<operator id="BDSKY_SerialTreeRootScalerB.1.160.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeB.1.160" weight="0.25"/>
+<operator id="BDSKY_SerialUniformOperatorB.1.160.t" spec="Uniform" tree="@TreeB.1.160" weight="2.5"/>
+<operator id="BDSKY_SerialSubtreeSlideB.1.160.t" spec="SubtreeSlide" tree="@TreeB.1.160" weight="1.25"/>
+<operator id="BDSKY_SerialNarrowB.1.160.t" spec="Exchange" tree="@TreeB.1.160" weight="1.25"/>
+<operator id="BDSKY_SerialWideB.1.160.t" spec="Exchange" isNarrow="false" tree="@TreeB.1.160" weight="0.25"/>
+<operator id="BDSKY_SerialWilsonBaldingB.1.160.t" spec="WilsonBalding" tree="@TreeB.1.160" weight="0.25"/>
+
+<operator id="BDSKY_SerialTreeScalerAY.34.t" spec="ScaleOperator" scaleFactor="0.5" tree="@TreeAY.34" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialTreeRootScalerAY.34.t" spec="ScaleOperator" rootOnly="true" scaleFactor="0.5" tree="@TreeAY.34" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialUniformOperatorAY.34.t" spec="Uniform" tree="@TreeAY.34" weight="2.0833333333333335"/>
+<operator id="BDSKY_SerialSubtreeSlideAY.34.t" spec="SubtreeSlide" tree="@TreeAY.34" weight="1.0416666666666667"/>
+<operator id="BDSKY_SerialNarrowAY.34.t" spec="Exchange" tree="@TreeAY.34" weight="1.0416666666666667"/>
+<operator id="BDSKY_SerialWideAY.34.t" spec="Exchange" isNarrow="false" tree="@TreeAY.34" weight="0.20833333333333334"/>
+<operator id="BDSKY_SerialWilsonBaldingAY.34.t" spec="WilsonBalding" tree="@TreeAY.34" weight="0.20833333333333334"/>
+
+<!--operator id="becomeUninfectiousRateScaler.t" spec="ScaleOperator" parameter="@becomeUninfectiousRate.t" scaleFactor="0.75" weight="6.0"/-->
+<operator id="reproductiveNumberScaler.t" spec="ScaleOperator" parameter="@reproductiveNumber.t" scaleFactor="0.75" weight="6.0"/>
+<operator id="samplingProportionScaler.t" spec="ScaleOperator" parameter="@samplingProportion.t" scaleFactor="0.75" weight="6.0"/>
+<!--operator id="updownBD.t" spec="UpDownOperator" scaleFactor="0.95" weight="3.0">
+    <up idref="reproductiveNumber.t"/>
+    <down idref="becomeUninfectiousRate.t"/>
+</operator-->
+<operator id="updownRS.t" spec="UpDownOperator" scaleFactor="0.95" weight="3.0">
+    <up idref="reproductiveNumber.t"/>
+    <down idref="samplingProportion.t"/>
+</operator>
+<!--operator id="updownDS.t" spec="UpDownOperator" scaleFactor="0.95" weight="3.0">
+    <up idref="becomeUninfectiousRate.t"/>
+    <down idref="samplingProportion.t"/>
+</operator-->
+<operator id="FrequenciesExchanger.s" spec="DeltaExchangeOperator" delta="0.01" weight="0.4">
+    <parameter idref="freqParameter.s"/>
+</operator>
+<operator id="KappaScaler.s" spec="ScaleOperator" parameter="@kappa.s" scaleFactor="0.5" weight="0.1"/>
+<operator id="gammaShapeScaler.c" spec="ScaleOperator" parameter="@gammaShape.s" scaleFactor="0.75" weight="0.2"/>
+
+<operator id='migrationMatrixOperator' spec='ScaleOperator' scaleFactor=".75" weight="2" parameter="@migrationMatrix" scaleAll="true"/>
+<operator id="updownBM.t:$(n)" scaleFactor="0.9" spec="UpDownOperator" weight="3.0">
+    <up idref="reproductiveNumber.t"/>
+    <down idref="migrationMatrix"/>
+</operator>
+
+<logger id="tracelog" fileName="$(filebase).$(seed).log" logEvery="10000" model="@posterior" >
+    <log idref="posterior"/>
+    <log idref="likelihood"/>
+    <log idref="prior"/>
+    <log idref="treePriors"/>
+    <log idref="kappa.s"/>
+    <log idref="becomeUninfectiousRate.t"/>
+    <log idref="reproductiveNumber.t"/>
+    <log idref="samplingProportion.t"/>
+    <log idref="freqParameter.s"/>
+    <log idref="gammaShape.s"/>
+    <log idref="clockRate.c"/>
+    <log idref="migrationMatrix"/>
+    <log idref="frequencies"/>
+    <plate var='n' range='AY.122,AY.46.6,AY.42,AY.43,AY.98.1,B.1.1.7,B.1.177,R.1,B.1.621.1,AY.126,AY.4,B.1.617.2,AY.9.2,B.1.351,AY.4.2,B.1.258.17,B.1.258,AY.4.6,B.1.1.39,B.1.177.81,B.1,B.1.221,B.1.1.318,B.1.160,AY.34'>
+        <log id="treeHeight$(n)" spec="beast.evolution.tree.TreeHeightLogger" tree="@Tree$(n)"/>
+    </plate>
+    <!--plate var='n' range='AY.122,AY.46.6,AY.42,AY.43,AY.98.1,B.1.1.7,B.1.177,R.1,B.1.621.1,AY.126,AY.4,B.1.617.2,AY.9.2,B.1.351,AY.4.2,B.1.258.17,B.1.258,AY.4.6,B.1.1.39,B.1.177.81,B.1,B.1.221,B.1.1.318,B.1.160,AY.34'>
+    	<log id="treeLength$(n)" spec="multitypetree.util.TreeLengthLogger" tree="@Tree$(n)"/>
+    </plate-->
+    <plate var='n' range='AY.122,AY.46.6,AY.42,AY.43,AY.98.1,B.1.1.7,B.1.177,R.1,B.1.621.1,AY.126,AY.4,B.1.617.2,AY.9.2,B.1.351,AY.4.2,B.1.258.17,B.1.258,AY.4.6,B.1.1.39,B.1.177.81,B.1,B.1.221,B.1.1.318,B.1.160,AY.34'>
+        <log idref="treeLikelihood$(n)"/>
+    </plate>
+</logger>
+
+<logger id="screenlog" logEvery="10000">
+    <log idref="posterior"/>
+    <log id="ESS.0" spec="util.ESS" arg="@posterior"/>
+    <log idref="likelihood"/>
+    <log idref="prior"/>
+</logger>
+
+<plate var='n' range='AY.122,AY.46.6,AY.42,AY.43,AY.98.1,B.1.1.7,B.1.177,R.1,B.1.621.1,AY.126,AY.4,B.1.617.2,AY.9.2,B.1.351,AY.4.2,B.1.258.17,B.1.258,AY.4.6,B.1.1.39,B.1.177.81,B.1,B.1.221,B.1.1.318,B.1.160,AY.34'>
+	<logger id="treelog$(n)" fileName="$(filebase).$(seed).cluster$(n).trees" logEvery="10000" mode="tree">
+		<log id="TreeWithMetaDataLogger.$(n)" spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@Tree$(n)"/>
+	</logger>
+</plate>
+
+</run>
+
+</beast>

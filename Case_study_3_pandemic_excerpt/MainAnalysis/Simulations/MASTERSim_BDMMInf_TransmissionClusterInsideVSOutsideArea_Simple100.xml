@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><beast beautitemplate='Standard' beautistatus='' namespace="beast.core:beast.evolution.alignment:beast.evolution.tree.coalescent:beast.core.util:beast.evolution.nuc:beast.evolution.operators:beast.evolution.sitemodel
+:beast.evolution.substitutionmodel:beast.evolution.likelihood:beast.core.parameter:beast.evolution.tree.coalescent:multitypetree.operators:multitypetree.util:master.beast:master.conditions:master.model:master.postprocessors:master.outputs:master" version="2.0">
+
+<!-- 2021-07-14 -->
+	<map name="Beta">beast.math.distributions.Beta</map>
+	<map name="Exponential">beast.math.distributions.Exponential</map>
+	<map name="InverseGamma">beast.math.distributions.InverseGamma</map>
+	<map name="LogNormal">beast.math.distributions.LogNormalDistributionModel</map>
+	<map name="Gamma">beast.math.distributions.Gamma</map>
+	<map name="Uniform">beast.math.distributions.Uniform</map>
+	<map name="prior">beast.math.distributions.Prior</map>
+	<map name="LaplaceDistribution">beast.math.distributions.LaplaceDistribution</map>
+	<map name="OneOnX">beast.math.distributions.OneOnX</map>
+	<map name="Normal">beast.math.distributions.Normal</map>
+
+	<alignment spec="beast.evolution.alignment.Alignment" id="input_alignment" dataType="nucleotide">
+    	<plate var='n' range='1:100'>
+			<sequence spec="Sequence" taxon="$(n)" value="?" />
+		</plate>	
+	</alignment>
+
+	<tree spec='BeastTreeFromMaster' id="mastertree"
+		  samplePopulationSizes="true"
+		  nSamples="1"
+		  reverseTime="false">
+
+		<model spec='Model' id='model'>
+
+			<populationType spec='PopulationType' typeName='X' dim='2' id='X'/>
+			<populationType spec='PopulationType' typeName='S' dim='2' id='S'/>
+
+<!-- Fixed becomeUninfectiousRate = 36.5 -->
+<!-- type 0 = outside area, type 1 = within area-->
+			<reactionGroup spec='ReactionGroup' reactionGroupName='Birth'>
+				<reaction spec='Reaction' rate="54.75"> <!-- Re of 1.5 outside area -->
+					X[0] -> 2X[0]
+				</reaction>
+				<reaction spec='Reaction' rate="73.0"> <!-- Re of 2 inside area -->
+					X[1] -> 2X[1]
+				</reaction>
+			</reactionGroup>
+
+			<reactionGroup spec='ReactionGroup' reactionGroupName='Death'>
+				<reaction spec='Reaction' rate="36.5"> <!-- outside area -->
+					X[0] -> 0
+				</reaction>
+				<reaction spec='Reaction' rate="33.675"> <!-- inside area -->
+					X[1] -> 0
+				</reaction>
+			</reactionGroup>
+
+			<reactionGroup spec='ReactionGroup' reactionGroupName='Sampling'>
+				<reaction spec='Reaction' rate="0.0"> <!-- No sampling outside of area -->
+					X[0]:1 -> S[0]:1
+				</reaction> 
+				<reaction spec='Reaction' rate="1.825"> <!-- Sampling of 5% inside of area-->
+					X[1]:1 -> S[1]:1
+				</reaction>
+			</reactionGroup>
+
+			<reactionGroup spec='ReactionGroup' reactionGroupName="Migration">
+				<reaction spec='Reaction' rate="0.12"> <!-- Migration rate from outside to inside of area once every forty weeks-->
+					X[0] -> X[1]
+				</reaction>
+				<reaction spec='Reaction' rate="0.12"> <!-- Migration rate from inside to outside of area once every forty weeks-->
+					X[1] -> X[0]
+				</reaction>
+			</reactionGroup>
+
+
+		</model>
+
+		<initialState spec='InitState'>
+			<lineageSeed spec='Individual'>
+				<population spec='Population' type="@X" location="0"/> <!-- Process starts with individual outside of area -->
+			</lineageSeed>
+		</initialState>
+
+		<!-- Abort simulation if number of infected individuals drops to zero -->
+		<!-- Q: Seperate end conditions for 0 and 1 to make sure neither are zero? -->
+		<lineageEndCondition spec='LineageEndCondition' nLineages="0" isRejection="true">
+			<population spec='Population' type='@X' location="0" />
+			<population spec='Population' type='@X' location="1" />
+		</lineageEndCondition>
+
+		<!-- Finish simulation when 100 samples have been generated inside of area. -->
+		<lineageEndCondition spec='LineageEndCondition' nLineages="100" isRejection="false">
+			<population spec='Population' type='@S' location="1" />
+		</lineageEndCondition>
+
+		<!-- Keep only sampled lineages. -->
+		<inheritancePostProcessor spec='LineageFilter' populationName="S"/>
+
+		<!-- Trim off post-sampling lineages. -->
+		<inheritancePostProcessor spec='LineageFilter' populationName="S"
+								  leavesOnly="true" discard="true"/>
+
+		<output spec='NewickOutput' fileName='InsideVSOutside_Tree_$(seed).newick'/>
+		<output spec='NexusOutput' fileName='InsideVSOutside_Tree_$(seed).nexus'/>
+		<!--output spec='JsonOutput' fileName='MASTERSim_TransmissionClusterInsideVSOutsideArea_treeSimAnaLyzer_sim.json'/-->
+
+	</tree>
+
+	<data spec='beast.app.seqgen.SimulatedAlignmentAutoTaxa' id='alignment'
+		  data="@input_alignment"
+		  sequencelength="30000"
+		  outputFileName="MASTERSim_BDMMInf_InsideVSOutside_Alignment_$(seed).txt"
+		  tree="@mastertree">
+		  <sequence spec="Sequence" taxon="dummy" value="?"/>
+		  <siteModel spec="beast.evolution.sitemodel.SiteModel" id="SiteModel">
+			<parameter name="mutationRate" id="mutationRate" value="8e-4"/>
+			<substModel spec="HKY" id="hky">
+				<parameter name='kappa' id="kappa" value="1.0" lower="0.0"/>
+				<frequencies id="freq" spec="Frequencies" frequencies="0.25 0.25 0.25 0.25"/>
+			</substModel>
+		</siteModel>
+	</data>
+
+
+<distribution spec="beast.evolution.speciation.BirthDeathMigrationModelUncoloured" id="treePrior" tree="@tree"
+				  typeLabel="type" stateNumber="2" conditionOnSurvival="true">
+		<parameter name="migrationMatrix" id="rateMatrix" value="0.1 0.1" dimension="2"/>
+		<parameter name="frequencies" id="geo-frequencies" value="1.0 0.0" lower="0." upper="1." dimension="2"/>
+		<parameter name="R0" id="R0" lower="0" dimension="2" value="1.5 1.5"/>
+		<parameter name="becomeUninfectiousRate" id="becomeUninfectiousRate" value="36.5 36.5" lower="0" dimension="2" />
+		<parameter name="samplingProportion" id="samplingProportion" value="0.0 0.05" lower="0" dimension="2"  upper="1."/>
+	</distribution>
+
+	<!--RPNcalculator spec="beast.base.inference.util.RPNcalculator" id="birth" expression="R0 becomeUninfectiousRate *">
+		<parameter idref="becomeUninfectiousRate"/>
+		<parameter idref="R0"/>
+	</RPNcalculator>
+	<RPNcalculator spec="beast.base.inference.util.RPNcalculator" id="sampling" expression="becomeUninfectiousRate samplingProportion *">
+		<parameter idref="becomeUninfectiousRate"/>
+		<parameter idref="samplingProportion"/>
+	</RPNcalculator>
+	<RPNcalculator spec="beast.base.inference.util.RPNcalculator" id="death" expression="becomeUninfectiousRate 1 samplingProportion - *">
+		<parameter idref="becomeUninfectiousRate"/>
+		<parameter idref="samplingProportion"/>
+	</RPNcalculator-->
+
+	<run chainLength="20000000" id="mcmc" spec="MCMC" storeEvery="10000" numInitializationAttempts="100">
+
+
+		<init spec="beast.core.util.RandomTreeFromMaster" masterTree="@mastertree"  taxa="@input_alignment">
+			<tree spec="beast.evolution.tree.RandomTree" id="tree" taxa="@input_alignment">
+				<populationModel spec="ConstantPopulation">
+					<parameter name="popSize">5.0</parameter>
+				</populationModel>
+			</tree>
+		</init>
+
+		<state id="state" storeEvery="10000">
+			<stateNode idref="R0"/>
+			<stateNode idref="samplingProportion"/>
+			<stateNode idref="rateMatrix"/>
+			<stateNode idref="tree"/>
+			<stateNode idref="mutationRate"/>
+		</state>
+
+		<distribution id="posterior" spec="util.CompoundDistribution">
+			<distribution id="prior" spec="util.CompoundDistribution">
+				<distribution idref="treePrior"/>
+				<prior id="R0Prior" name="distribution" x="@R0">
+					<LogNormal name="distr" M="0." S="1.25"/>
+				</prior>
+				<prior id="becomeUninfectiousRatePrior" name="distribution" x="@becomeUninfectiousRate">
+					<Normal id="NormalDistributionModel.0" name="distr" mean="36.5" sigma="1"/>
+				</prior>
+				<prior id="migPrior" name="distribution" x="@rateMatrix">
+					<distr spec='beast.math.distributions.Exponential' mean="1.0"/>
+				</prior>
+			</distribution>
+			<distribution spec='TreeLikelihood' id="treeLikelihood" useAmbiguities="true" siteModel="@SiteModel"
+						  data="@alignment" tree="@tree">
+			</distribution>
+		</distribution>
+
+		<operator id="treeScaler" scaleFactor="0.75" spec="ScaleOperator" tree="@tree" weight="3.0"/>
+		<operator id="treeRootScaler" rootOnly="true" scaleFactor="0.75" spec="ScaleOperator" tree="@tree" weight="3.0"/>
+		<operator id="narrow" spec="Exchange" tree="@tree" weight="15.0"/>
+		<operator id="UniformOperator" spec="Uniform" tree="@tree" weight="30.0"/>
+		<operator id="SubtreeSlide" spec="SubtreeSlide" tree="@tree" weight="15.0"/>
+		<operator id="wide" isNarrow="false" spec="Exchange" tree="@tree" weight="3.0"/>
+		<operator id="WilsonBalding" spec="WilsonBalding" tree="@tree" weight="3.0"/>
+		<!--operator id="updowntree" spec="UpDownOperator" scaleFactor=".9" weight="3" up="@tree" down="@mutationRate"/-->
+		<!--operator id='mutationOperator' spec='ScaleOperator' scaleFactor=".75" weight="1" parameter="@mutationRate"/-->
+		<operator id='R0Operator' spec='ScaleOperator' scaleFactor=".85" weight="2" parameter="@R0"/>
+		<operator id='SOperator' spec='ScaleOperator' scaleFactor=".85" weight="2" parameter="@samplingProportion"/>
+		<!--operator id='bsOperator' spec='ScaleOperator' scaleFactor=".9" weight="2" parameter="@becomeUninfectiousRate" scaleAll="false"/-->
+		<operator id='rateMatrixOperator' spec='ScaleOperator' scaleFactor=".75" weight="2" parameter="@rateMatrix" scaleAll="true"/>
+		<!--operator id="updown1" spec="UpDownOperator" scaleFactor=".9" weight="2" up="@R0" down="@becomeUninfectiousRate"/-->
+		<operator id="updown2" spec="UpDownOperator" scaleFactor=".9" weight="2" up="@rateMatrix" down="@R0"/>
+
+		<!--operator spec="DeltaExchangeOperator" parameter="@geo-frequencies" delta="0.2" weight=".1"/-->
+
+		<logger fileName="MASTERSim_BDMMInf_InsideVsOutside_$(seed).log" id="log" logEvery="10000" mode="autodetect">
+			<distribution idref="posterior" name="log"/>
+			<log idref="treeLikelihood"/>
+			<log idref="treePrior"/>
+			<log idref="R0"/>
+			<log idref="becomeUninfectiousRate"/>
+			<log idref="samplingProportion"/>
+			<log idref="rateMatrix"/>
+			<log id="TreeHeight" spec="beast.evolution.tree.TreeHeightLogger" tree="@tree"/>
+			<log idref="mutationRate"/>
+			<log idref="kappa"/>
+			<log idref="geo-frequencies"/>
+			<!--log idref="birth"/>
+			<log idref="death"/>
+			<log idref="sampling"/-->
+            <log spec="bdmm.loggers.RootProbLogger" bdmmuc="@treePrior"/>
+		</logger>
+
+		<logger fileName="MASTERSim_BDMMInf_InsideVsOutside_$(seed).trees" logEvery="10000" mode="autodetect"
+				log="@tree"/>
+
+		<logger id="screenlog" logEvery="10000" mode="autodetect">
+			<distribution idref="posterior" name="log"/>
+			<log arg="@posterior" id="ESS.0" spec="util.ESS"/>
+			<log idref="treePrior"/>
+			<log idref="TreeHeight"/>
+			<log idref="R0"/>
+			<log idref="becomeUninfectiousRate"/>
+			<log idref="rateMatrix"/>
+			<log idref="mutationRate"/>
+		</logger>
+	</run>
+
+</beast>
